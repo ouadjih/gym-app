@@ -1,0 +1,169 @@
+.new{
+  display: flex;
+  flex-direction: row;
+  margin:1em
+}
+.newContainer {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.newContainer-top{
+  font-weight: bold;
+  color: #f37f2c;
+  font-size: 22px;
+  position: absolute;
+  top:1.5em;
+}
+
+.left {
+  flex: 1;
+  text-align: center;
+}
+.right {
+  flex: 2;
+}
+img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: relative;
+  left: 7em;
+  top: 4em;
+
+}
+
+form {
+  padding: 1em;
+  display: flex ;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+.input{
+  border-radius: .3em;
+  
+}
+.bottom{
+  display: flex;
+  flex-direction: row;
+  
+}
+.formInput {
+  width:35%;
+}
+label {
+
+  display: flex;
+  align-items: center;
+}
+.icon {
+  cursor: pointer;
+}
+input {
+  width: 100%;
+  padding: 5px 10px;
+  border: 1px solid gray;
+  border-radius: .1em;
+  background-color: none;
+  color: black;
+}
+
+.submit{
+  border: none;
+  border-radius: .5em;
+  color: rgb(252, 247, 247);
+  background:#f37f2c;
+  font-weight: bold;
+  width: 7em;
+  height: 3em;
+  
+  position: relative;
+  top: 7em;
+  right: 8em;
+  cursor: pointer;
+}
+@media screen and  (max-width:1066px) { 
+  .bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    align-items: center;
+    padding: .5em;
+   
+  }
+  .submit{
+    position: relative;
+    top: 6em;
+  }
+}
+@media screen and  (max-width:690px) { 
+  .bottom{
+    display: flex;
+    flex-direction: row;
+   
+  }
+  .newContainer {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    left: -4em;
+    padding: 1em 4em;
+    
+ }
+ .newContainer-top{
+  font-weight: 600;
+  color: #f37f2c;
+  font-size: 19px;
+  position: absolute;
+  top:1em;
+}
+  .input{
+    border-radius: .3em;
+    color: aliceblue;
+    
+    width: 160%;
+    
+  }
+ 
+  img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    
+    left: 0em;
+    top: 8em;
+  }
+  .formInput {
+    width:100%;
+    position: relative;
+    left: -3em;
+  }
+  
+  .bottom
+  {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    align-items: center;
+    padding: .5em;
+  }
+    .left {
+    flex: 1;
+    position: relative;
+    top: -4em;
+    text-align: center;
+  }
+  .submit{
+    position: relative;
+    top: 0em;
+    right: 0em;
+  }
+   
+  
+}

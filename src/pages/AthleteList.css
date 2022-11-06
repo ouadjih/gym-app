@@ -1,0 +1,13 @@
+.new{
+    display: flex;
+    flex-direction: row;
+    margin:1em
+  }
+  .newContainer {
+      background-color: rgb(255, 255, 255);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      
+  }
